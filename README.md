@@ -29,3 +29,11 @@ Run the generator like so in the root of the repository:
 ```bash
 $ package-collection-generate Input/<collection>.json ./<collection>.json --auth-token <github personal auth token>
 ```
+
+### Sign
+
+Temporarily copy `key.pem` and `swift_package.cer` from safe-keeping to this directory and run:
+
+```bash
+$ package-collection-sign Unsigned/<collection>.json ./<collection>.json key.pem swift_package.cer
+```
